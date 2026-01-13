@@ -13,7 +13,7 @@
         
         body {
             font-family: 'Arial', sans-serif;
-            background: url('c:\Users\Admin\Downloads\daniel caesar.jpg') center/cover no-repeat;
+            background: url('https://github.com/marcdomingo763-eng/adadadawd/blob/main/Untitled%20design.jpg?raw=true') center/cover no-repeat;
             background-attachment: fixed;
             min-height: 100vh;
             overflow-x: hidden;
@@ -30,7 +30,11 @@
         }
         
         .slide-container.active {
-            display: block;
+           display: flex;             /* Use Flexbox */
+    flex-direction: column;    /* Stack items vertically */
+    justify-content: center;   /* Center vertically */
+    align-items: center;       /* Center horizontally */
+    min-height: 100vh;         /* Full screen height */
         }
         
         @keyframes slideIn {
@@ -58,7 +62,9 @@
         
         /* White container to enclose all text */
         .text-container {
-            background: rgba(255, 255, 255, 0.95);
+            background: url(https://i.pinimg.com/1200x/22/6d/51/226d518992e53e21d772b8bc6d03800b.jpg) center/cover no-repeat;;
+            background-blend-mode: overlay;
+    background-color: rgba(51, 146, 164, 0.8);
             border-radius: 25px;
             padding: 40px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -106,15 +112,22 @@
         
         /* Header container styling */
         .header-container {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            padding: 20px 30px;
-            margin: 20px auto;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            display: inline-block;
-        }
+    background: url(https://i.pinimg.com/1200x/c3/a3/30/c3a330adb41beca7c66fbfe19327e130.jpg);
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin: 20px auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(50, 217, 247, 0.3);
+    display: inline-flex;      /* Changed to inline-flex to wrap content */
+    flex-direction: column;    /* Stacks image on top of text */
+    align-items: center;       /* Centers horizontally */
+    justify-content: center;   /* Centers vertically */
+    gap: 15px;                 /* Space between image and text */
+    text-align: center;        /* Centers the text itself */
+}
+            
+        
         
         h1 {
             color: #2118cf;
@@ -338,7 +351,7 @@
     <div class="slide-container active" id="slide1">
         <div class="home-section">
             <div class="text-container">
-                <img src="https://github.com/marcdomingo763-eng/adadadawd/blob/main/images.jpg?raw=true" alt="Pompompurin" class="main-character">
+                <img src="https://i.pinimg.com/736x/b7/c7/c9/b7c7c9a8e60d0f7d3da13e3a828c18d0.jpg" alt="sharki" class="main-character">
                 
                 <h1 class="main-title">happy birthday Aiel!</h1>
                 
@@ -354,6 +367,8 @@
     <!-- Slide 2: Real Memories -->
     <div class="slide-container" id="slide2">
         <div class="header-container">
+    
+            
             <h2 style="background: none; -webkit-text-fill-color: initial; color: #0048ff;">the birthday girl</h2>
 
         </div>
@@ -383,13 +398,12 @@
             
             <div class="music-info">
                 <div class="song-title">"Just the way you are" by Bruno Mars</div>
-                <div class="song-title">Just the way you are</div>
                 <div>3:40</div>
             </div>
             
             
                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7BqBn9nzAq8spo5e7cZ0dJ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <p>every time <i>
+            <p>every time i<i>
 
 
 
@@ -422,7 +436,7 @@
     <div class="slide-container" id="slide5">
        
         <div class="header-container">
-            <h2>wrong button hehe</h2>
+            <h2 style="background: none; -webkit-text-fill-color: initial; color: #0048ff;">wrong button hehe</h2>
         </div>
         <button class="choice-btn" onclick="goBack()">Again?</button>
     </div>
